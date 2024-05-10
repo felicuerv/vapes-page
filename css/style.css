@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-item a:hover{
+    color: #FF729F;
+    transition: all 0.3s ease;
+}
+
+/* Estilos para el botón */
+.botn {
+    padding: 10px;
+    border: 2px solid #FF729F; /* Color del borde */
+    border-radius: 20px; /* Borde redondeado */
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: all 0.3s ease; /* Transición suave para todos los cambios */
+    background-color: transparent; /* Color de fondo inicial */
+    color: #FF729F; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilo para cuando el cursor pasa sobre el botón */
+.botn:hover {
+    background-color: #FF729F; /* Cambia el color de fondo al mismo color del borde */
+    color: white; /* Cambia el color del texto a blanco */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar sobre el botón */
+}
+
+.logo-cont {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para alinear las etiquetas ul a la izquierda */
+.navbar-nav {
+    margin-left: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #FF729F; /* Cambia el color de fondo del icono */
+    color: white; /* Cambia el color del icono */
+    border-radius: 50%; /* Hace que el icono sea circular */
+}
+
+.botnl{
+    padding: 10px;
+    border: 2px solid #0000; /* Color del borde */
+    border-radius: 20px; /* Borde redondeado */
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: all 0.3s ease; /* Transición suave para todos los cambios */
+    background-color: #FF729F; /* Color de fondo inicial */
+    color: #FFFFFF; /* Color del texto */
+    cursor: pointer;
+}
+
+.botnl:hover {
+    background-color: #FFFFFF; /* Cambia el color de fondo al mismo color del borde */
+    color: #FF729F; /* Cambia el color del texto a blanco */
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar sobre el botón */
+}
+
+.titulo h1{
+    font-size: 24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #FF729F;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(179, 177, 177, 0.6),#FF729F);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    color: #fff;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #FF729F;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.footer {
+    background-color: #ffffff;
+    color: #777777;
+    padding: 50px 0;
+}
+
+.footer h5 {
+    color: #FF729F;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #777777;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #FF729F;
+}
+
+/* PRODUCTOS PAGE */
+
+
+.wrapper{
+    width: 100%;
+    overflow-x: hidden;
+}
+.wrapper .container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.category-filter{
+    margin-top: 40px;
+}
+.title{
+    margin-bottom: 40px;
+}
+.title h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1b1919;
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+.filter-btns{
+    text-align: center;
+}
+.filter-btn{
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 10px 30px;
+    font-size: 16px;
+    color: #d3d3d3;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.filter-btn::after{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 2px;
+    width: 0;
+    background-color: #FF729F;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out
+}
+.filter-btn:hover{
+    color: #FF729F;
+}
+.filter-btn:hover::after{
+    width: 100%;
+}
+/* active button */
+.active-btn{
+    color: #FF729F;
+}
+.active-btn::after{
+    width: 100%;
+}
+/*  */
+
+.filter-items{
+    margin-top: 40px;
+}
+.item-img{
+    position: relative;
+    overflow: hidden;
+}
+.item-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(212, 203, 203, 0.1);
+}
+.item-img .discount{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background-color: #FF729F;
+    z-index: 1;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 16px;
+}
+.item-img img{
+    width: 100%;
+    display: block;
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.filter-item:hover .item-img img{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+.item-info{
+    padding: 14px 0;
+}
+.item-info p{
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 8px;
+}
+.item-info .old-price{
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+.item-info .new-price{
+    display: inline-block;
+    margin-left: 6px;
+    font-weight: 600;
+    color: #f53939;
+}
+.add-btn{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #FF729F;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 2px;
+    border: 2px solid #FF729F;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.add-btn:hover{
+    border-color: #FF729F;
+    background-color: #fff;
+    color: #FF729F;
+}
+
+
+.filter-items{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+.filter-item{
+    width: 100%;
+    margin-bottom: 40px;
+    -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 24px; /* Reducir el tamaño de la fuente */
+    border: none;
+    outline: none;
+    background-color: #FF729F;
+    color: white;
+    cursor: pointer;
+    width: 50px; /* Ancho igual al alto para hacer un círculo */
+    height: 50px; /* Ancho igual al alto para hacer un círculo */
+    padding: 0; /* Eliminar el relleno */
+    border-radius: 50%; /* Esto hace que el botón sea redondo */
+    animation: fadeIn 0.3s;
+}
+
+
+  #scrollToTopBtn:hover {
+    background-color: #ff729fa7;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+@-webkit-keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .filter-item{
+        width: calc(50% - 30px);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .filter-item{
+        width: calc(33.3333% - 30px);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .filter-item{
+        width: calc(25% - 30px);
+    }
+}
